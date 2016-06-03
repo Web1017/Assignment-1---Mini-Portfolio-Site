@@ -1,4 +1,12 @@
-// look into favicon
+/**
+ * FileName: app.js
+ * @Author Javid Niftaliyev
+ * Student ID: 300742916
+ * @description: This is the main javascript file for the current web site.
+ * Website(Azure): http://assign1-my-mini-portfolio-site.azurewebsites.net/
+ * Website(Github): https://github.com/Web1017/Assignment-1---Mini-Portfolio-Site
+ * 
+ */
 //IIFE - Immediately invoked Expression 
 
 (function () {
@@ -30,9 +38,9 @@
     //check if paragraph exists   
 
     var paragraphElementsLength = paragraphElements.length - 1; // counting from 3 to 1, descending order
+    
+// If paragraph one currently exists then fill each paragraph inside the page.   
     for (var index = paragraphElementsLength; index >= 0; index--) {
-        //   console.log(index);
-        //   console.error("This is an error");       //provides error
         if (paragraphElements[index]) {
             paragraphElements[index].innerHTML = paragraphs[index];
         }
